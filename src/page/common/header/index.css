@@ -1,0 +1,44 @@
+/*
+* @Author: liyue
+* @Date:   2017-12-03 14:57:43
+* @Last Modified by:   EWL
+* @Last Modified time: 2017-12-03 15:14:52
+*/
+
+.header .logo{
+    position: absolute;
+    display: block;
+    font-size: 36px;
+    color: #c60023;
+    font-weight: bold;
+    top: 35px;
+    left: 65px;
+    
+}
+
+.header .search-con{
+    padding: 40px 0 30px 250px;
+}
+.header .search-con .search-input{
+    width: 550px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    border: 2px solid #c60023;
+    font-size: 18px;
+    outline: none;
+}
+.header .search-con .search-btn{
+    position: absolute;
+    width: 80px;
+    height: 44px;
+    background: #c60023;
+    outline: none;
+    border: none;
+    color: #ddd;
+    font-size: 18px;
+    cursor: pointer;
+}
+.header .search-con .search-btn:hover{
+    color: #fff;
+}

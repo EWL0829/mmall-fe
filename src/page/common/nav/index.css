@@ -1,0 +1,30 @@
+/*
+* @Author: liyue
+* @Date:   2017-12-03 14:11:59
+* @Last Modified by:   EWL
+* @Last Modified time: 2017-12-03 14:20:42
+*/
+.nav{
+    height: 30px;
+    line-height: 30px;
+    background: #eee;
+}
+/* 用户部分 */
+.nav .user{
+    float: left;
+}
+.nav .user .link{
+    margin-right: 5px;
+}
+/* 登录状态 */
+.nav .user.login{
+    display: none;
+}
+/* 导航链接部分 */
+.nav-list{
+    float: right;
+}
+.nav-list .nav-item{
+    display: inline-block;
+    margin: 0 5px;
+}

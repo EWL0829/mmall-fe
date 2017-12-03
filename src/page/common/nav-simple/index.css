@@ -1,0 +1,17 @@
+/*
+* @Author: liyue
+* @Date:   2017-12-03 11:16:20
+* @Last Modified by:   EWL
+* @Last Modified time: 2017-12-03 14:03:55
+*/
+.nav-simple{
+    height: 60px;
+    line-height: 60px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+.nav-simple .logo{
+    color: #c60023;
+    font-weight: bold;
+    font-size: 26px;
+}
