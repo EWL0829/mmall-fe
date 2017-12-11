@@ -1,4 +1,4 @@
-/**
+/*
  * @Author : EWL
  * @Time   : 2017/12/1 23:13
  * @Last Modified By : EWL
@@ -21,10 +21,17 @@ var getHtmlConfig = function (name, title) {
 };
 var config = {
     entry : {
-        'common'  : ['./src/page/common/index.js'],
-        'index'   : ['./src/page/index/index.js'],
-        'login'   : ['./src/page/login/index.js'],
-        'result'  : ['./src/page/result/index.js']
+        'common'                    : ['./src/page/common/index.js'],
+        'index'                     : ['./src/page/index/index.js'],
+        'user-login'                : ['./src/page/user-login/index.js'],
+        'user-register'             : ['./src/page/user-register/index.js'],
+        'user-pass-reset'           : ['./src/page/user-pass-reset/index.js'],
+        'user-center'               : ['./src/page/user-center/index.js'],
+        'user-center-update'        : ['./src/page/user-center-update/index.js'],
+        'user-pass-update'          : ['./src/page/user-pass-update/index.js'],
+        'list'                      : ['./src/page/list/index.js'],
+        'detail'                    : ['./src/page/detail/index.js'],
+        'result'                    : ['./src/page/result/index.js']
     },
     output : {
         path: './dist',
@@ -59,9 +66,15 @@ var config = {
         new ExtractTextPlugin("css/[name].css"),
         //处理html文件
         new HtmlWebpackPlugin(getHtmlConfig('index','首页')),
-        new HtmlWebpackPlugin(getHtmlConfig('login','用户登录')),
-        new HtmlWebpackPlugin(getHtmlConfig('result','操作提示')),
-
+        new HtmlWebpackPlugin(getHtmlConfig('user-login','用户登录')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-register','用户注册')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-pass-reset','找回密码')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-center','用户中心')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-center-update','更新用户中心')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-pass-update','修改密码')),
+        new HtmlWebpackPlugin(getHtmlConfig('list','商品列表')),
+        new HtmlWebpackPlugin(getHtmlConfig('detail','商品详情')),
+        new HtmlWebpackPlugin(getHtmlConfig('result','操作提示'))
     ],
     module : {
         loaders : [
@@ -74,7 +87,7 @@ var config = {
 };
 // 在开发环境下可以这么做
 if('dev' == WEBPACK_ENV){
-    config.entry.common.push('webpack-dev-server/client?http://localhost:9090');
+    config.entry.common.push('webpack-dev-server/client?http://localhost:9000');
 }
 module.exports = config;
 

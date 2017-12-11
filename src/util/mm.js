@@ -2,7 +2,7 @@
 * @Author: liyue
 * @Date:   2017-12-02 20:06:53
 * @Last Modified by:   EWL
-* @Last Modified time: 2017-12-02 21:12:57
+* @Last Modified time: 2017-12-04 12:24:04
 */
 var conf = {
     // 与静态资源的地址是一样的
@@ -63,10 +63,11 @@ var _mm = {
     validate : function(value, type){
         var value = $.trim(value);//去除字段中的空格
         if('require' === type){
-            return !value;
+            return !!value;
         }
         // 手机验证
         if('phone' === type){
+            
             return /^1\d{10}$/.test(value);
         }
         // 邮箱验证
@@ -77,7 +78,7 @@ var _mm = {
     // 统一登录
     doLogin : function(){
         // 在强制登录结束后还需要跳转回原来的界面
-        window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href);
+        window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);
     },
     goHome : function(){
          window.location.href = './index.html';

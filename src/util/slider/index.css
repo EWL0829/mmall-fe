@@ -1,0 +1,42 @@
+/*
+* @Author: liyue
+* @Date:   2017-12-05 16:39:38
+* @Last Modified by:   EWL
+* @Last Modified time: 2017-12-05 17:19:35
+*/
+.banner { 
+    position: relative; 
+    overflow: auto;
+}
+.banner li { 
+    list-style: none; 
+}
+.banner ul li { 
+    float: left; 
+}
+.banner .dots{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    text-align: center;
+    
+}
+.banner .dots li{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 4px;
+    text-indent: -999em;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: .4;
+    -webkit-transition: background .5s, opacity .5s;
+    -moz-transition: background .5s, opacity .5s;
+    transition: background .5s, opacity .5s;
+}
+.banner .dots li.active {
+    background: #fff;
+    opacity: 1;
+}

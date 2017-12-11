@@ -1,0 +1,29 @@
+/*
+* @Author: liyue
+* @Date:   2017-12-04 19:16:26
+* @Last Modified by:   EWL
+* @Last Modified time: 2017-12-05 14:24:56
+*/
+.formline{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.formline .label{
+    display: inline-block;
+    width: 80px;
+    font-weight: 700;
+    text-align-last: right;    
+}
+.formline .text{
+    margin-left: 20px;
+}
+.btn-submit{
+    margin: 10px 0 0 10px;
+}
+.input{
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+}

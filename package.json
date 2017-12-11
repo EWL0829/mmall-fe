@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "set WEBPACK_ENV=dev && webpack-dev-server --inline --port 9090",
+    "dev": "set WEBPACK_ENV=dev && webpack-dev-server --color --inline --port 9000",
     "dist": "set WEBPACK_ENV=online && webpack -p"
   },
   "repository": {

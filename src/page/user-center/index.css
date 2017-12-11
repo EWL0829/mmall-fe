@@ -1,0 +1,22 @@
+/*
+* @Author: liyue
+* @Date:   2017-12-04 19:16:26
+* @Last Modified by:   EWL
+* @Last Modified time: 2017-12-04 19:53:30
+*/
+.formline{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+}
+.formline .label{
+    display: inline-block;
+    width: 60px;
+    text-align-last: right;    
+}
+.formline .text{
+    margin-left: 20px;
+}
+.btn-submit{
+    margin-top: 10px;
+}

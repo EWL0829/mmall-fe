@@ -2,7 +2,7 @@
 * @Author: liyue
 * @Date:   2017-12-03 14:12:04
 * @Last Modified by:   EWL
-* @Last Modified time: 2017-12-03 14:45:30
+* @Last Modified time: 2017-12-04 11:40:45
 */
 require('./index.css');
 
@@ -24,7 +24,7 @@ var nav   = {
         });
         // 点击注册事件
         $('.js-register').click(function(){
-            window.location.href = './register.html';
+            window.location.href = './user-register.html';
         });
         // 退出点击事件（涉及到后端，让后端将我们的点击事件删除就可以完成
         // 退出）
